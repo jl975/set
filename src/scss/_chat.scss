@@ -1,0 +1,69 @@
+
+.chat {
+
+	font-family: 'Trebuchet MS';
+
+	.chat-container {	
+		width: 200px;
+		height: 424px;
+		border-radius: 5px;
+		box-shadow: 3px 4px 8px #aaa;
+		background-color: #eee;
+		padding: 16px 5px;
+	}
+
+	.chat-heading {
+		font-weight: bold;
+		margin-bottom: 10px;
+		padding: 0 12px;
+	}
+
+	.chat-message-container {
+		background-color: #dffcff;
+		padding: 10px 0;
+		height: 310px;
+		border-radius: 4px;
+		overflow: scroll;
+		opacity: 0.9;
+	}
+
+	.chat-messages {
+		font-size: 14px;
+
+		.chat-message {
+			padding: 6px 8px;
+			line-height: 20px;
+
+			&.sent-by-me {
+				background-color: #ddd;
+			}
+			&.sent-by-other {
+				background-color: #fff;
+			}
+			&.server-message {
+				
+			}
+		}
+
+
+	}
+
+	.chat-input {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 192px;
+		padding: 6px 8px;
+		margin: 5px 0;
+
+		border-left: 2px solid #ccc;
+		border-top: 2px solid #ccc;
+		border-radius: 4px;
+
+		font-size: 14px;
+		line-height: 20px;
+
+	}
+
+}

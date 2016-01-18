@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/stylesheets/master.css">
+
+	<script src="/jquery/dist/jquery.min.js"></script>
+	<script src="/socket.io-client/socket.io.js"></script>
+</head>
+<body>
+	<script src="js/main.js"></script>
+
+	<section class="container-fluid">
+		
+		<div class="board">
+			<div class="cards-wrapper"></div>
+		</div>
+
+		<div style="position: absolute; top: 5%; left: 5%;">
+			<p>SCORE</p>
+			<ul class="player-list"></ul>
+		</div>
+		<div style="position: absolute; top: 5%; right: 5%;">
+			<label>Cards left:</label>
+			<span class="cards-left"></span>
+<!-- 			<div>
+				<button class="btn-shuffle">Shuffle</button>
+			</div> -->
+			<div>
+				<button class="btn-add3">Add 3</button>
+			</div>
+			<div>
+				<button class="btn-checksets">Check for Sets</button>
+			</div>
+			<div>
+				<input type="range" id="xtilt" min="-90" max="90" value="0" step="1" oninput="xTilt(value)"/>
+			</div>
+			<div>
+				<input type="range" id="ytilt" min="-90" max="90" value="0" step="1" oninput="yTilt(value)"/>
+			</div>
+
+			<section class="chat">
+				<div class="chat-container">
+					<label class="chat-heading">Chat</label>
+					<div class="chat-message-container">
+						<ul class="chat-messages">
+<!-- 							<li class="chat-message" data-player="0">sup</li>
+							<li class="chat-message" data-player="1">nm u</li>
+							<li class="chat-message" data-player="0">nm</li>
+							<li class="chat-message" data-player="0">I came in like a wrecking ball</li>
+							<li class="chat-message" data-player="1">...</li>
+							<li class="chat-message" data-player="0">...</li>
+							<li class="chat-message" data-player="1">8===D</li>
+							<li class="chat-message" data-player="1">...</li>
+							<li class="chat-message" data-player="0">...</li> -->
+						</ul>
+					</div>
+					<input type="text" class="chat-input" placeholder="Enter message here" />
+				</div>
+			</section>
+		</div>
+
+	</section>
+	
+</body>
+</html>
